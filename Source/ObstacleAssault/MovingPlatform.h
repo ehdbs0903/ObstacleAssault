@@ -31,4 +31,7 @@ public:
 	FVector StartLocation;
 
 	void MovePlatform(float DeltaTime);
+
+	bool ShouldPlatformReturn() const;
+	float GetDistanceMoved() const;
 };
