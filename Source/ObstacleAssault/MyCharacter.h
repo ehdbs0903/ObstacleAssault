@@ -30,4 +30,7 @@ public:
 	FVector RespawnLocation;
 	UPROPERTY(EditAnywhere, Category = "FallReset")
 	float ResetZThreshold;
+
+	void SetRespawnLocation();
+	void Respawn(FVector RespawnLocation);
 };

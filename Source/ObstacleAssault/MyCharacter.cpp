@@ -29,7 +29,7 @@ void AMyCharacter::Tick(float DeltaTime)
 
 	if (CurrentLocation.Z <= ResetZThreshold)
 	{
-		SetActorLocation(RespawnLocation);
+		Respawn(RespawnLocation);
 	}
 }
 
@@ -40,3 +40,12 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 }
 
+void AMyCharacter::SetRespawnLocation()
+{
+
+}
+
+void AMyCharacter::Respawn(FVector RespawnLocation)
+{
+		SetActorLocation(RespawnLocation);
+}
